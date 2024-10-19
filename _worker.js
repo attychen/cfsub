@@ -5,21 +5,89 @@ let mytoken= ['auto'];//快速订阅访问入口, 留空则不启动快速订阅
 
 // 设置优选地址，不带端口号默认443，TLS订阅生成
 let addresses = [
-	'icook.tw:2053#官方优选域名',
-	'cloudflare.cfgo.cc#优选官方线路',
+'shopify.com:443',
+'time.is:443',
+'icook.hk:443',
+'icook.tw:443',
+'ip.sb:443',
+'japan.com:443',
+'malaysia.com:443',
+'russia.com:443',
+'singapore.com:443',
+'skk.moe:443',
+'www.visa.com.sg:443',
+'www.visa.com.hk:443',
+'www.visa.com.tw:443',
+'www.visa.co.jp:443',
+'www.visakorea.com:443',
+'www.gco.gov.qa:443',
+'www.gov.se:443',
+'www.gov.ua:443',
+'cf.090227.xyz:443',
+'ct.090227.xyz:443',
+'cmcc.090227.xyz:443',
+'cfip.xxxxxxxx.tk:443',
+'bestcf.onecf.eu.org:443',
+'cf.zhetengsha.eu.org:443',
+'acjp2.cloudflarest.link:443',
+'achk.cloudflarest.link:443',
+'xn--b6gac.eu.org:443',
+'yx.887141.xyz:443',
+'8.889288.xyz:443',
+'cfip.1323123.xyz:443',
+'cf.515188.xyz:443',
+'cf-st.annoy.eu.org:443',
+'cf.0sm.com:443',
+'cf.877771.xyz:443',
+'cf.345673.xyz:443'	
 ];
 
 // 设置优选地址api接口
 let addressesapi = [
-	'https://raw.githubusercontent.com/cmliu/WorkerVless2sub/main/addressesapi.txt?proxyip=true', //可参考内容格式 自行搭建。
+	//'https://raw.githubusercontent.com/cmliu/WorkerVless2sub/main/addressesapi.txt?proxyip=true', //可参考内容格式 自行搭建。
 	//'https://raw.githubusercontent.com/cmliu/WorkerVless2sub/main/addressesipv6api.txt', //IPv6优选内容格式 自行搭建。
+	'https://ipdb.api.030101.xyz/?type=bestcf&country=true',
+'https://addressesapi.090227.xyz/CloudFlareYes',
+'https://addressesapi.090227.xyz/ip.164746.xyz'
 ];
 
 // 设置优选地址，不带端口号默认80，noTLS订阅生成
 let addressesnotls = [
-	'www.visa.com.sg#官方优选域名',
-	'www.wto.org:8080#官方优选域名',
-	'www.who.int:8880#官方优选域名',
+	'shopify.com:8080',
+'time.is:8080',
+'icook.hk:8080',
+'icook.tw:8080',
+'ip.sb:8080',
+'japan.com:8080',
+'malaysia.com:8080',
+'russia.com:8080',
+'singapore.com:8080',
+'skk.moe:8080',
+'www.visa.com.sg:8080',
+'www.visa.com.hk:8080',
+'www.visa.com.tw:8080',
+'www.visa.co.jp:8080',
+'www.visakorea.com:8080',
+'www.gco.gov.qa:8080',
+'www.gov.se:8080',
+'www.gov.ua:8080',
+'cf.090227.xyz:8080',
+'ct.090227.xyz:8080',
+'cmcc.090227.xyz:8080',
+'cfip.xxxxxxxx.tk:8080',
+'bestcf.onecf.eu.org:8080',
+'cf.zhetengsha.eu.org:8080',
+'acjp2.cloudflarest.link:8080',
+'achk.cloudflarest.link:8080',
+'xn--b6gac.eu.org:8080',
+'yx.887141.xyz:8080',
+'8.889288.xyz:8080',
+'cfip.1323123.xyz:8080',
+'cf.515188.xyz:8080',
+'cf-st.annoy.eu.org:8080',
+'cf.0sm.com:8080',
+'cf.877771.xyz:8080',
+'cf.345673.xyz:8080'
 ];
 
 // 设置优选noTLS地址api接口
@@ -29,7 +97,7 @@ let addressesnotlsapi = [
 
 let DLS = 8;//速度下限
 let addressescsv = [
-	//'https://raw.githubusercontent.com/cmliu/WorkerVless2sub/main/addressescsv.csv', //iptest测速结果文件。
+	'https://raw.githubusercontent.com/cmliu/WorkerVless2sub/main/addressescsv.csv', //iptest测速结果文件。
 ];
 
 let subconverter = "SUBAPI.fxxk.dedyn.io"; //在线订阅转换后端，目前使用CM的订阅转换功能。支持自建psub 可自行搭建https://github.com/bulianglin/psub
@@ -39,8 +107,10 @@ let link = '';
 let edgetunnel = 'ed';
 let RproxyIP = 'false';
 let proxyIPs = [//无法匹配到节点名就随机分配以下ProxyIP域名
-	'proxyip.multacom.fxxk.dedyn.io',
-	'proxyip.vultr.fxxk.dedyn.io',
+	//'proxyip.multacom.fxxk.dedyn.io',
+	//'proxyip.vultr.fxxk.dedyn.io',
+	'bestproxy.onecf.eu.org#Mingyu提供维护反代优选',
+'proxy.xxxxxxxx.tk#OTC提供维护反代优选'
 ];
 let CMproxyIPs = [
 	//'proxyip.aliyun.fxxk.dedyn.io:HK',//匹配节点名, 有HK就分配该ProxyIP域名
